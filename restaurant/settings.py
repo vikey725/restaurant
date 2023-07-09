@@ -80,7 +80,10 @@ DATABASES = {
         'NAME': 'restaurant',
         'HOST': 'localhost',
         'USER': 'admin',
-        'PASSWORD': 'Employee@123!'
+        'PASSWORD': 'Employee@123!',
+        'OPTIONS': {
+            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"
+        }
     }
 }
 
